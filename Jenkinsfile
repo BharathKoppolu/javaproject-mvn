@@ -4,7 +4,7 @@ pipeline{
                 stage('build')
                     {
                       steps {
-                          sh 'ant -f build.xml -v'
+                          sh ' mvn -X package '
                             }
                     }
                }
