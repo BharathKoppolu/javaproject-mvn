@@ -9,3 +9,9 @@ pipeline{
                     }
                }
 }
+post {
+        always{
+                archive'/*.war'
+        }
+}
+                
